@@ -7,9 +7,9 @@ const useChangeSay = () => {
   const [fiSe, setFiSe] = useState(false)
 
   const firstSay =
-    ' I made this site using YouTube search API and Spotify API. It was a school project '
+    '  사랑으로 연결, 세상을 바꾸는 공익 기부의 힘! PITSTOP. '
   const secondSay =
-    ' This website recommends similar songs when you type songs! '
+    ' 작은 선물, 큰 변화! 우리의 손길로 세상을 따뜻하게. '
 
   useEffect(() => {
     if (fiSe === true) {

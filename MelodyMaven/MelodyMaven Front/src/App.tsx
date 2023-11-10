@@ -4,14 +4,14 @@ import Router from './router/router';
 import { GlobalStyle } from './components/GlobalStyles';
 
 function App() {
-  return (
-    <div className="App">
-      <GlobalStyle />
-        <BrowserRouter>
-            <Router />
-        </BrowserRouter>
-    </div>
-  );
+	return (
+		<div className="App">
+			<GlobalStyle />
+			<BrowserRouter>
+				<Router />
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;

@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 import { MdError } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 export const MainPageContainer = styled.div`
   margin-left: auto;
@@ -19,7 +20,7 @@ export const MaingPageRecommendTitle = styled.p`
   text-align: center;
 `
 
-export const MainPageRecommendForm = styled.form`
+export const MainPageRecommendForm = styled.div`
   margin-top: 140px;
   height: 4vw;
   display: flex;
@@ -61,16 +62,15 @@ export const MainPageUrlInput = styled.input`
   font-family: 'Pretendard-Thin';
   display: flex;
   cursor: pointer;
-
-
   :focus {
     outline: none;
   }
 `
 
-export const MainPageUrlButton = styled.button`
-  width: 7.5vw;
-  height: 3vw;
+export const MainPageUrlButton = styled(Link)`
+  width: 8vw;
+  min-width: 128px;
+  aspect-ratio: 2.5;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 20px;
@@ -83,12 +83,10 @@ export const MainPageUrlButton = styled.button`
   border: none;
   border-radius: 30px;
   font-family: 'Pretendard-Thin';
-
-  word-spacing: 10px;
-
+  text-decoration: none;
+  transition: 150ms ease;
   cursor: pointer;
-
-  :hover {
+  &:hover {
     background-color: beige;
     border: 1px solid gray;
     color: black;

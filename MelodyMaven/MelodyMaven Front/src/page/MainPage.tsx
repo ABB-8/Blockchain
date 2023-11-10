@@ -1,11 +1,8 @@
-import Main from "../components/Main/Main"
-import NavBar from "../components/common/NavBar/NavBar"
+import Main from '../components/Main/Main';
+import NavBar from '../components/common/NavBar/NavBar';
 
 const MainPage = () => {
-    
-    return(
-        <Main />
-    )
-}
+	return <Main />;
+};
 
-export default MainPage
+export default MainPage;
